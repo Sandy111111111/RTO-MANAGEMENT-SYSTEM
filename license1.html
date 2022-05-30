@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Driving License Registration Form</title>
+        <link rel="stylesheet" href="./licensecss.css">
+        <script type="text/javascript" lang="javascript" src="./responsiveRegistaration.js"></script>
+    </head>
+       
+    <body>
+        <h1>Driving License Registration Form</h1>
+        <form action="licenseapply.php" method="post">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <label for="fname">First Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="lname">Last Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-90">
+                    <input type="email" id="email" name="email" placeholder="it should contain @,.">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="mobile">Mobile:</label>
+                </div>
+                <div class="col-90">
+                    <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="gender" required>Gender:</label>
+                </div>
+                <div class="col-90">
+                    <input type="radio" id="male" name="gender" value="male"/>Male
+                    <input type="radio" id="female" name="gender" value="female"/>Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="dob">Date Of Birth:</label>
+                </div>
+                <div class="col-90">
+                    <input type="Date" id="dob" name="dob">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="address">Address:</label>
+                </div>
+                <div class="col-90">
+                    <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="city">City:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="city" name="city" maxlength="10">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="pincode">Area Pincode:</label>
+                </div>
+                <div class="col-90">
+                    <input type="number" id="pin" name="pin" maxlength="6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="state">State:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="state" name="state">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="qualification" required >License:</label>
+                </div>
+                <div class="col-90">
+                    <select name="license" id="license">
+                        <option value=" ">Select License Type:</option>
+                        <option value="drivinglicense">Driving License</option>
+                        <option value="learnerlicense">Learners License</option>
+                  
+                        
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="vehicle" required>Vehicle:</label>
+                </div>
+                <div class="col-90">
+                    <select name="vehicle" id="vehicle">
+                        <option value=" ">Select Vehicle:</option>
+                        <option value="2wheeler">2 Wheeler</option>
+                        <option value="3wheeler">3 Wheeler</option>
+                        <option value="Both">Both 2 wheeler and 3 wheeler</option>
+                      
+                  
+                </div>
+            </div>
+            
+            </div>
+           <br>
+           <br>
+
+          
+          
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+        <div class="col-10">
+        <input type="submit" value="Register" > 
+        <a href="C:\xampp\htdocs\RTO\thankupage.html" ></a>
+        </div>
+        </div> 
+    </form> 
+    </body>
+
+</html>
+
